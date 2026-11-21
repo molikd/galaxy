@@ -3465,6 +3465,7 @@ name = "galaxy-app"
 version = "27.0.dev0"
 source = { editable = "packages/app" }
 dependencies = [
+    { name = "aiohttp" },
     { name = "beaker" },
     { name = "boltons" },
     { name = "bx-python", version = "0.15.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
@@ -3540,6 +3541,7 @@ test = [
 
 [package.metadata]
 requires-dist = [
+    { name = "aiohttp" },
     { name = "beaker" },
     { name = "boltons" },
     { name = "bx-python" },
@@ -4657,6 +4659,7 @@ default-groups = []
 dependencies = [
     { name = "a2wsgi" },
     { name = "aiofiles" },
+    { name = "aiohttp" },
     { name = "alembic" },
     { name = "apispec", version = "6.10.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "apispec", version = "6.10.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
@@ -4908,6 +4911,7 @@ typecheck = [
 requires-dist = [
     { name = "a2wsgi" },
     { name = "aiofiles" },
+    { name = "aiohttp" },
     { name = "alembic" },
     { name = "apispec" },
     { name = "babel" },
